@@ -3,7 +3,6 @@
 #2.利用pytesseract+tesseract.exe的模式；
 #3.使用已有的模型进行api或接口的调用调用
 #最终尝试利用github上已有的项目进行了尝试成功运行，自行安装docker，git等，利用了作者Alisen alisen39模型进行了实践，最终能够得出结果
-# VERSION - EDITION 10
 # Author: Alisen alisen39
 #github地址：https://github.com/alisen39/TrWebOCR
 
