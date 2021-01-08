@@ -1,0 +1,21 @@
+#由于对本项目基本情况并不了解，经过调研，基本有几种方法：
+#1自己训练和构建模型，时间和基础问题无法快速完成；
+#2.利用pytesseract+tesseract.exe的模式；
+#3.使用已有的模型进行api或接口的调用调用
+#最终尝试利用github上已有的项目进行了尝试成功运行，自行安装docker，git等，利用了作者Alisen alisen39模型进行了实践，最终能够得出结果
+# VERSION - EDITION 10
+# Author: Alisen alisen39
+#github地址：https://github.com/alisen39/TrWebOCR
+
+# 从 dockerhub pull
+docker pull mmmz/trwebocr:latest
+
+# 运行镜像
+docker run -itd --rm -p 8089:8089 --name trwebocr mmmz/trwebocr:latest 
+
+#完成镜像拉取和启动之后，利用python尝试使用，cmd找到文件目录后运行
+python ocr_req_repo_parse.py
+#输入想要解析的图像后，即可在cmd得到解析后的文字 测试图片有t1.png,t2.jpg,t3.jpg,t4.jpg
+#根据提示输入
+t1.png
+#即可得到结果
